@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: ros_tutorial_topic
+Description: Description of ros_tutorial_topic
+Version: 0.0.0
+Cflags: -I/usr/local/include -I/usr/include
+Libs: -L/usr/local/lib -lros_tutorial_topic /usr/lib/x86_64-linux-gnu/libboost_system.so
+Requires: roscpp std_msgs message_runtime actionlib actionlib_msgs

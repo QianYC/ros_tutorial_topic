@@ -1,0 +1,21 @@
+(cl:defpackage ros_tutorial_topic-msg
+  (:use )
+  (:export
+   "<FIBACTION>"
+   "FIBACTION"
+   "<FIBACTIONFEEDBACK>"
+   "FIBACTIONFEEDBACK"
+   "<FIBACTIONGOAL>"
+   "FIBACTIONGOAL"
+   "<FIBACTIONRESULT>"
+   "FIBACTIONRESULT"
+   "<FIBFEEDBACK>"
+   "FIBFEEDBACK"
+   "<FIBGOAL>"
+   "FIBGOAL"
+   "<FIBRESULT>"
+   "FIBRESULT"
+   "<MSGTUTORIAL>"
+   "MSGTUTORIAL"
+  ))
+

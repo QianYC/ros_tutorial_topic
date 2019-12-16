@@ -1,0 +1,8 @@
+prefix=/home/yc_qian/catkin_ws/src/ros_tutorial_topic/cmake-build-debug/devel
+
+Name: ros_tutorial_topic
+Description: Description of ros_tutorial_topic
+Version: 0.0.0
+Cflags: -I/home/yc_qian/catkin_ws/src/ros_tutorial_topic/cmake-build-debug/devel/include -I/usr/include
+Libs: -L/home/yc_qian/catkin_ws/src/ros_tutorial_topic/cmake-build-debug/devel/lib -lros_tutorial_topic /usr/lib/x86_64-linux-gnu/libboost_system.so
+Requires: roscpp std_msgs message_runtime actionlib actionlib_msgs
