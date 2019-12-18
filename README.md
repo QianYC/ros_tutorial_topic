@@ -96,3 +96,13 @@ rosparam list
 rosparam set param_name
 rosparam get param_name
 ```
+
+## 6 launch multiple nodes at a time
+
+### 6.1 *.launch file
+
+'*.launch' file in the 'launch' folder specifies which node to run
+
+### 6.2 using roslaunch
+
+```roslaunch ros_tutorial_topic union.launch```
