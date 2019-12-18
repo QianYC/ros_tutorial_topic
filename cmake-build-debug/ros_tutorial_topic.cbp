@@ -57,6 +57,64 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yc_qian/catkin_ws/src/ros_tutorial_topic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="param_server">
+				<Option output="/home/yc_qian/catkin_ws/src/ros_tutorial_topic/cmake-build-debug/devel/lib/ros_tutorial_topic/param_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yc_qian/catkin_ws/src/ros_tutorial_topic/cmake-build-debug/devel/lib/ros_tutorial_topic"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DROS_BUILD_SHARED_LIBS=1"/>
+					<Add option="-DROS_PACKAGE_NAME=&quot;ros_tutorial_topic&quot;"/>
+					<Add option="-DROSCONSOLE_BACKEND_LOG4CXX"/>
+					<Add directory="/home/yc_qian/catkin_ws/src/ros_tutorial_topic/cmake-build-debug/devel/include"/>
+					<Add directory="/opt/ros/kinetic/include"/>
+					<Add directory="/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/yc_qian/catkin_ws/src/ros_tutorial_topic/cmake-build-debug/Makefile&quot;  VERBOSE=1 param_server"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/yc_qian/catkin_ws/src/ros_tutorial_topic/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/yc_qian/catkin_ws/src/ros_tutorial_topic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yc_qian/catkin_ws/src/ros_tutorial_topic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="param_server/fast">
+				<Option output="/home/yc_qian/catkin_ws/src/ros_tutorial_topic/cmake-build-debug/devel/lib/ros_tutorial_topic/param_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yc_qian/catkin_ws/src/ros_tutorial_topic/cmake-build-debug/devel/lib/ros_tutorial_topic"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DROS_BUILD_SHARED_LIBS=1"/>
+					<Add option="-DROS_PACKAGE_NAME=&quot;ros_tutorial_topic&quot;"/>
+					<Add option="-DROSCONSOLE_BACKEND_LOG4CXX"/>
+					<Add directory="/home/yc_qian/catkin_ws/src/ros_tutorial_topic/cmake-build-debug/devel/include"/>
+					<Add directory="/opt/ros/kinetic/include"/>
+					<Add directory="/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/yc_qian/catkin_ws/src/ros_tutorial_topic/cmake-build-debug/Makefile&quot;  VERBOSE=1 param_server/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/yc_qian/catkin_ws/src/ros_tutorial_topic/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/yc_qian/catkin_ws/src/ros_tutorial_topic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yc_qian/catkin_ws/src/ros_tutorial_topic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="action_listener">
 				<Option output="/home/yc_qian/catkin_ws/src/ros_tutorial_topic/cmake-build-debug/devel/lib/ros_tutorial_topic/action_listener" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/yc_qian/catkin_ws/src/ros_tutorial_topic/cmake-build-debug/devel/lib/ros_tutorial_topic"/>
@@ -1228,6 +1286,9 @@
 		</Unit>
 		<Unit filename="/home/yc_qian/catkin_ws/src/ros_tutorial_topic/src/action_server.cpp">
 			<Option target="action_server"/>
+		</Unit>
+		<Unit filename="/home/yc_qian/catkin_ws/src/ros_tutorial_topic/src/param_server.cpp">
+			<Option target="param_server"/>
 		</Unit>
 		<Unit filename="/home/yc_qian/catkin_ws/src/ros_tutorial_topic/src/service_client.cpp">
 			<Option target="service_client"/>

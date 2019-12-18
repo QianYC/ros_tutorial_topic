@@ -2,6 +2,7 @@
 /home/yc_qian/catkin_ws/src/ros_tutorial_topic/cmake-build-debug/CMakeFiles/install/local.dir
 /home/yc_qian/catkin_ws/src/ros_tutorial_topic/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/yc_qian/catkin_ws/src/ros_tutorial_topic/cmake-build-debug/CMakeFiles/test.dir
+/home/yc_qian/catkin_ws/src/ros_tutorial_topic/cmake-build-debug/CMakeFiles/param_server.dir
 /home/yc_qian/catkin_ws/src/ros_tutorial_topic/cmake-build-debug/CMakeFiles/action_listener.dir
 /home/yc_qian/catkin_ws/src/ros_tutorial_topic/cmake-build-debug/CMakeFiles/action_server.dir
 /home/yc_qian/catkin_ws/src/ros_tutorial_topic/cmake-build-debug/CMakeFiles/service_client.dir

@@ -4,8 +4,7 @@
 #include <ros/ros.h>
 #include "ros_tutorial_topic/SrvTutorial.h"
 
-bool
-service_add(ros_tutorial_topic::SrvTutorial::Request &request, ros_tutorial_topic::SrvTutorial::Response &response) {
+bool service_add(ros_tutorial_topic::SrvTutorial::Request &request, ros_tutorial_topic::SrvTutorial::Response &response) {
     response.result = request.a + request.b;
     ROS_INFO("request a = %d, b = %d", request.a, request.b);
     return true;

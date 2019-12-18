@@ -1,0 +1,12 @@
+<launch>
+<group ns="ns1">
+<node pkg="ros_tutorial_topic" type="topic_publisher" name="pub1"/>
+<node pkg="ros_tutorial_topic" type="topic_subscriber" name="sub1"/>
+</group>
+<group ns="ns2">
+<node pkg="ros_tutorial_topic" type="topic_publisher" name="pub2"/>
+<node pkg="ros_tutorial_topic" type="topic_subscriber" name="sub2"/>
+</group>
+<node pkg="ros_tutorial_topic" type="action_server" name="act_server"/>
+<node pkg="ros_tutorial_topic" type="service_server" name="ser_server"/>
+</launch>

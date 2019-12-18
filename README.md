@@ -1,6 +1,8 @@
 # ros_tutorial_topic
+## author: ycQian
+## date: 2019/12/17
 
-**although this package name ends with topic, it not only shows the publish-subscribe pattern in ROS, but also shows how to use service and action in ROS**
+**this repo contains examples in ROS**
 
 ## 0 environment
 
@@ -66,10 +68,31 @@ bidirectional asynchronized feedback
 
 ```rosrun ros_tutorial_topic action_client arg1 arg2```
 
-### 4.3 see the feedback
+### 4.3 the action files
+
+'*.action' files in the 'action' folder defines the goals, results and feedbacks
+
+### 4.4 see the feedback
 
 ```rosrun ros_tutorial_topic action_listener```
 
 or use the ros provided function
 
 ```rostopic echo action_fib/feedback```
+
+## 5 using parameters
+
+### 5.1 use parameters in program
+
+```
+nodeHandle.getParam(param_name,variable)
+nodeHandle.setParam(param_name,variable)
+```
+
+### 5.2 use parameters at runtime
+
+```
+rosparam list
+rosparam set param_name
+rosparam get param_name
+```

@@ -168,6 +168,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named param_server
+
+# Build rule for target.
+param_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 param_server
+.PHONY : param_server
+
+# fast build rule for target.
+param_server/fast:
+	$(MAKE) -f CMakeFiles/param_server.dir/build.make CMakeFiles/param_server.dir/build
+.PHONY : param_server/fast
+
+#=============================================================================
 # Target rules for targets named action_listener
 
 # Build rule for target.
@@ -1054,6 +1067,33 @@ src/action_server.cpp.s:
 	$(MAKE) -f CMakeFiles/action_server.dir/build.make CMakeFiles/action_server.dir/src/action_server.cpp.s
 .PHONY : src/action_server.cpp.s
 
+src/param_server.o: src/param_server.cpp.o
+
+.PHONY : src/param_server.o
+
+# target to build an object file
+src/param_server.cpp.o:
+	$(MAKE) -f CMakeFiles/param_server.dir/build.make CMakeFiles/param_server.dir/src/param_server.cpp.o
+.PHONY : src/param_server.cpp.o
+
+src/param_server.i: src/param_server.cpp.i
+
+.PHONY : src/param_server.i
+
+# target to preprocess a source file
+src/param_server.cpp.i:
+	$(MAKE) -f CMakeFiles/param_server.dir/build.make CMakeFiles/param_server.dir/src/param_server.cpp.i
+.PHONY : src/param_server.cpp.i
+
+src/param_server.s: src/param_server.cpp.s
+
+.PHONY : src/param_server.s
+
+# target to generate assembly for a file
+src/param_server.cpp.s:
+	$(MAKE) -f CMakeFiles/param_server.dir/build.make CMakeFiles/param_server.dir/src/param_server.cpp.s
+.PHONY : src/param_server.cpp.s
+
 src/service_client.o: src/service_client.cpp.o
 
 .PHONY : src/service_client.o
@@ -1172,6 +1212,7 @@ help:
 	@echo "... install/local"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... param_server"
 	@echo "... action_listener"
 	@echo "... action_server"
 	@echo "... service_client"
@@ -1246,6 +1287,9 @@ help:
 	@echo "... src/action_server.o"
 	@echo "... src/action_server.i"
 	@echo "... src/action_server.s"
+	@echo "... src/param_server.o"
+	@echo "... src/param_server.i"
+	@echo "... src/param_server.s"
 	@echo "... src/service_client.o"
 	@echo "... src/service_client.i"
 	@echo "... src/service_client.s"

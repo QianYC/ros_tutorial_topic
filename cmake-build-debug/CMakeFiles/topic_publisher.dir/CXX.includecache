@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/yc_qian/catkin_ws/src/ros_tutorial_topic/src/topic_subscriber.cpp
+/home/yc_qian/catkin_ws/src/ros_tutorial_topic/src/topic_publisher.cpp
 ros/ros.h
 -
 ros_tutorial_topic/MsgTutorial.h

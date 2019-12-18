@@ -8,11 +8,7 @@ add_compile_options(-std=c++11)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
-  message_generation
-  roscpp
-  std_msgs
-        actionlib
-        actionlib_msgs
+  message_generation roscpp std_msgs actionlib actionlib_msgs
 )
 
 find_package(Boost REQUIRED COMPONENTS system)
@@ -38,8 +34,7 @@ add_action_files(
 ## Generate added messages and services with any dependencies listed here
 generate_messages(
     DEPENDENCIES
-    std_msgs
-        actionlib_msgs
+    std_msgs actionlib_msgs
 )
 
 ###################################
@@ -66,8 +61,7 @@ catkin_package(
 ## Your package locations should be listed before other locations
 include_directories(
 # include
-  ${catkin_INCLUDE_DIRS}
-        ${Boost_INCLUDE_DIRS}
+  ${catkin_INCLUDE_DIRS} ${Boost_INCLUDE_DIRS}
 )
 
 ## Declare a C++ executable
@@ -80,6 +74,7 @@ add_executable(service_client src/service_client.cpp)
 add_executable(action_server src/action_server.cpp)
 add_executable(action_client src/action_client.cpp)
 add_executable(action_listener src/action_listener.cpp)
+add_executable(param_server src/param_server.cpp)
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
@@ -90,6 +85,7 @@ add_dependencies(service_client ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXP
 add_dependencies(action_server ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(action_client ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(action_listener ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(param_server ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(topic_publisher ${catkin_LIBRARIES})
@@ -99,3 +95,4 @@ target_link_libraries(service_client ${catkin_LIBRARIES})
 target_link_libraries(action_server ${catkin_LIBRARIES})
 target_link_libraries(action_client ${catkin_LIBRARIES})
 target_link_libraries(action_listener ${catkin_LIBRARIES})
+target_link_libraries(param_server ${catkin_LIBRARIES})
